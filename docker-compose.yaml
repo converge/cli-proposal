@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  cli-proposal:
+    container_name: cli-proposal
+    env_file:
+      - .env
+    build:
+      context: .
+    command:
+      - ./cli-proposal
